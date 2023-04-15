@@ -1,0 +1,284 @@
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+img.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    filter: blur(7.5px);
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img.avatar {
+    position: relative;
+    margin: 25px;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 90%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.65;
+    transition: 0.5s;
+}
+
+img.avatar:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    position: relative;
+    width: 80%;
+    font-family: "MPLUSRounded1c-Bold", "sans-serif";
+    font-size: 5vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+    opacity: 0.4;
+}
+.wrapper video {
+    width: 100%;
+}
+    
+.wrapper svg { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+rect {
+    -webkit-mask: url(#mask);
+    mask: url(#mask);
+}
+
+rect {
+    fill: #fff;
+}
+
+main .emoji {
+    padding-bottom: 1.25vw;
+    width: 5vw;
+    height: 5vw;
+}
+
+p#main-information {
+    font-family: "Roboto-Light", "sans-serif";
+    font-size: 2.5vw;
+    opacity: 0.5;
+}
+
+p#main-information .emoji {
+    padding-bottom: 0.5vw;
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+
+div.container {
+    position: relative;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: calc(100% - (50px * 2));
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #09082f;
+}
+
+span.warning {
+    position: relative;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    height: auto;
+    color: rgb(183, 51, 51);
+    background-color: rgb(237, 142, 142);
+    border: 1.5px solid rgb(183, 51, 51);
+    border-radius: 10px;
+    font-size: 1.5vw;
+    display: block;
+}
+
+span.warning .emoji {
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+span.warning a {
+    color: rgb(183, 51, 51);
+    text-decoration: underline;
+}
+
+span.strike {
+    text-decoration: line-through;
+}
+
+div.block {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+p .emoji {
+    width: 2vw;
+    height: 2vw;
+}
+
+h2 {
+    position: relative;
+    width: auto;
+    font-family: "MPLUSRounded1c-Bold", "sans-serif";
+    font-size: 3.5vw;
+    text-align: center;
+    text-transform: uppercase;
+    border: 5px dashed #09082f;
+    border-radius: 10px;
+}
+
+p {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 2vw;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li span {
+    width: 20%;
+    font-weight: 800;
+}
+
+li i {
+    width: 80%;
+    font-size: 1.25vw;
+}
+
+li i .emoji {
+    width: 1.25vw;
+    height: 1.25vw;
+}
+
+progress {
+    width: 80%;
+    height: 15px;
+    color: #4844c2;
+    background-color: #efefef;
+}
+
+progress::-webkit-progress-bar {
+    background: #efefef;
+}
+progress::-webkit-progress-value {
+    background: #4844c2;
+} 
+progress::-moz-progress-bar {
+    color: #4844c2;
+    background: #efefef;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 15px;
+    color: #4844c2;
+    background-color: #efefef;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #4844c2;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+}
+  
+input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: #c3bfe1;
+}
+
+
+div.social {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+img.social {
+    position: relative;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    width: 35px;
+    height: 35px;
+}
+
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    position: relative;
+    font-family: "Roboto-Bold", "sans-serif";
+    font-size: 2.5vw;
+    opacity: 0.5;
+    text-align: center;
+    text-transform: uppercase;
+}
